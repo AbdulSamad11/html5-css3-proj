@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Company Web</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .head {
+        font-family: "Sansita Swashed", cursive;
+        height: 100vh;
+        color: rgb(0, 0, 0);
+        display: flex;
+        font-weight: bolder;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(117, 159, 175);
+      }
+      ul,
+      a {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        background-color: rgb(82, 102, 145);
+        padding: 3px;
+        font-size: large;
+        text-decoration: none;
+        color: lavender;
+      }
+
+      a:hover {
+        background-color: black;
+        padding: 3px;
+      }
+
+      .services {
+        background-color: rgb(100, 121, 138);
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+        width: 100%;
+        overflow: auto;
+        font-size: 1em;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      h1 {
+        font-size: 2.5em;
+      }
+      img {
+        height: 70px;
+        width: 100px;
+      }
+
+      .col {
+        font-size: initial;
+        width: 100%;
+        padding-top: 50px;
+        margin: auto;
+      
+      }
+
+      .wrapper {
+        width: 33.3%;
+        float: left;
+        padding: 50px;
+      }
+      .aboutus {
+        background-image: url("https://scontent.fkhi5-1.fna.fbcdn.net/v/t1.0-9/13557899_1765976520316117_7935130699580014713_n.jpg?_nc_cat=106&_nc_sid=8bfeb9&_nc_eui2=AeEtl39ahnGgP0vTbk27yWZds61QWC4GY4WzrVBYLgZjhR3-Qvk74Qwz4GyGT4sTIoY6eUp15QrBlKtJcggO8fND&_nc_ohc=ODC0K6yKOdoAX8Xw9CS&_nc_ht=scontent.fkhi5-1.fna&oh=c0a9a74f34abad9790a890960988347d&oe=5FA87FE4");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+      }
+      .aboutp {
+        padding-top: 50px;
+        width: 80%;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #fff;
+      }
+
+      .aboutBtn {
+        display: inline;
+        margin-top: 5px;
+        padding: 6px 15px 6px 15px;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        border: none;
+        outline: 2px solid rgb(0, 216, 245);
+      }
+    
+
+            .team{
+              padding-top: 100px;
+              padding-bottom: 100px;
+              text-align: center;
+              width: 100%;
+              background: hsl(0, 0, 95%);
+              
+            }
+
+            .wrap{
+              width: 90%;
+              margin: auto;
+              padding-top: 50px;
+              
+            }
+
+            .tcol{
+              width: 33.3%;
+              float: left;
+              padding: 10px 30px 10px 30px;
+              box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.6);
+              border: 1px solid black;
+             }
+
+             .teamCol::after{
+               clear: both;
+               content: "";
+               display: table;
+             }
+
+              .tcol img{
+                border-bottom: 1px solid black;
+              }
+
+              .tcol h3{
+                padding-top: 5px;
+              }
+              .ctaCol h3{
+                display: inline;
+              }
+
+        .yelContact{
+          width: 100%;
+          text-align: center;
+          padding: 30px 5px 30px 5px;
+          background-color: rgb(212, 243, 149);
+          overflow: auto;
+        }
+        .ctaCol{
+          width: 33.3%;
+          float: left;
+        }
+        .ctaCol::after{
+          content: "";
+          clear: both;
+          display: table;
+        }
+
+
+     .cont_col_social{
+      background-color: antiquewhite;
+      width: 100%;
+       /* text-align: center; */
+       padding: 30px 5px 30px 5px;
+     }
+
+     .cont_col_social::after{
+       content: "";
+       clear: both;
+       display: table;
+     }
+     .socCon-col1{
+      width: 35%;
+      float: left;
+      text-align: center;
+     }
+
+     .socCon-col1 .dis{
+       margin-left: -60px;
+     }
+     .socAcc i{
+       padding: 5px;
+     }
+
+     .socAcc .fa-facebook{
+background-color:rgb(20, 20, 163);
+color: cornsilk;
+     }
+
+     .socAcc .fa-twitter{
+      color: cornsilk;
+      background-color: red;
+}
+.socAcc .fa-google-plus{
+  background-color: rgb(0, 216, 245);
+  color: cornsilk;
+}
+
+
+.socAcc .fa-linkedin{
+  background-color: rgb(46, 94, 197);
+  color: cornsilk;
+} 
+
+.socCon-col2{
+  float: left;
+  width: 65%;
+  
+}
+
+.form-col{
+  float: left;
+  width: 48%;
+  margin-right: 2%;
+}
+
+.fname,.femail{
+  width: 100%;
+  height: 25px;
+  padding: 0px 5px 0px 5px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+}
+
+.comment{
+  width: 100%;
+  height: 100px;
+}
+
+.btn{
+  border: none;
+  outline: none;
+  background-color: rgb(230, 180, 116);
+  padding: 5px 10px 5px 10px;
+  margin-left: 50%;
+}
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: #1b181f;
+  color: #eee;
+  padding: 50px 0 50px 0;
+  justify-content: space-around;
+}
+
+.foot-col{
+  width: 28%;
+  
+}
+
+@media(max-width: 750px){
+  .wrapper,.tcol,.socCon-col1,.socCon-col2{
+    width: 100%;
+  }
+}
+@media(max-width: 500px){
+  .ctaCol{
+    width: 100%;
+    padding-top: 30px;
+  }
+  footer{
+  
+  padding: 0;
+    display: block;
+  }
+  .foot-col{
+   padding: 30px 10px 30px 10px;
+    width: 100%;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <h1>Welcome to Our Company</h1>
+        <h2>From Abdul Samad</h2>
+        <h5>since 1998</h5>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#"> Campus</a></li>
+        <li><a href="#"> Faculty</a></li>
+        <li><a href="#"> Admissions</a></li>
+        <li><a href="#"> Contact</a></li>
+      </ul>
+    </nav>
+    <section>
+      <div class="services">
+        <h1>Services</h1>
+        <div class="col">
+          <div class="wrapper">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Osa_hub.svg"
+              alt=""
+            />
+            <h2>Client Based</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
+              autem beatae vitae ullam. Nostrum aliquid nisi ab rem quae aut
+              esse, facere provident expedita amet cum. Consequatur illum
+              asperiores veritatis.
+            </p>
+          </div>
+          <div class="wrapper">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Osa_hub.svg"
+              alt=""
+            />
+            <h2>Client Based</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
+              autem beatae vitae ullam. Nostrum aliquid nisi ab rem quae aut
+              esse, facere provident expedita amet cum. Consequatur illum
+              asperiores veritatis.
+            </p>
+          </div>
+          <div class="wrapper">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Osa_hub.svg"
+              alt=""
+            />
+            <h2>Client Based</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
+              autem beatae vitae ullam. Nostrum aliquid nisi ab rem quae aut
+              esse, facere provident expedita amet cum. Consequatur illum
+              asperiores veritatis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="aboutus">
+      <h1>Our Interest</h1>
+      <p class="aboutp">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima maxime
+        repellat quas ratione ullam voluptatum voluptas hic, eos facere omnis
+        incidunt praesentium perspiciatis sint laboriosam quod. Impedit, tenetur
+        eum laborum aut in unde voluptatum vitae doloribus. Nemo quam obcaecati
+        vel at sit cumque accusamus vero beatae! Nam magnam numquam fugit!
+      </p>
+      <button class="aboutBtn">
+        Read More <i class="fa fa-angle-double-down"></i>
+      </button>
+    </section>
+    <section class="team">
+      <h1>Our Team</h1>
+      <div class="wrap">
+        <div class="teamCol">
+          <div class="tcol">
+            <img
+              src="https://static.thenounproject.com/png/860835-200.png"
+              alt="" 
+            />
+            <h3>Abdul Samad</h3>
+            <p>Foundar/CEO</p>
+          </div>
+          <div class="tcol">
+            <img
+              src="https://static.thenounproject.com/png/860835-200.png"
+              alt="" 
+            />
+            <h3>Abdul Samad</h3>
+            <p>Foundar/CEO</p>
+          </div>
+          <div class="tcol">
+            <img
+              src="https://static.thenounproject.com/png/860835-200.png"
+              alt="" 
+            />
+            <h3>Abdul Samad</h3>
+            <p>Foundar/CEO</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="yelContact">
+      <div class="cta">
+        <div class="ctaCol">
+          <i class="material-icons">email</i>&nbsp;
+          <h3>abc@gmail.com</h3>
+          </div>
+          <div class="ctaCol">
+            <i class="material-icons" >message</i>&nbsp;
+            <h3>03162379482</h3>
+          </div>
+          </div>
+          <div class="ctaCol">
+            <i class="material-icons">call_end</i>&nbsp;
+            <h3>0317894619</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="cont_col_social">
+      <div class="socCon-col1">
+        <h2>
+          Socail Contacts
+        </h2>
+        <br>
+        <i class="material-icons" style="font-size:16px">message</i>&nbsp;
+        <span>info@gmail.com</span><br>
+        <i class="material-icons dis" style="font-size:16px">call_end</i>&nbsp;
+        <span>423864</span>
+        <br><br>
+        <h4>Some other Socai Accounts</h4>
+        <div class="socAcc">
+        <i class="fa fa-facebook" style="font-size:26px; padding-left: 11px;padding-right: 11px;"></i>
+        <i class="fa fa-twitter" style="font-size:26px"></i>
+        <i class="fa fa-google-plus" style="font-size:26px"></i>
+        <i class="fa fa-linkedin" style="font-size:26px"></i>
+      </div>
+      </div>
+      <div class="socCon-col2">
+        <h2>Comment here</h2>
+        <form action="" class="form">
+          <div class="form-col">
+            <label for="name">Your Name</label>
+            <input class="fname" type="text" name="name" id="">
+          </div>
+          <div class="form-col">
+            <label for="email">Your Email</label>
+            <input class="femail" type="email" name="email" id="">
+          </div>
+          <div class="comm">
+          <label for="comment">
+            Comment Here
+          </label>
+          <textarea class="comment" name="comment" id="" cols="30" rows="10"></textarea>
+        <button class="btn">comment</button>
+      </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="foot-col">
+        <h2>
+          Your Choice
+        </h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur perspiciatis perferendis blanditiis rem cumque quia, voluptas hic autem sunt esse nostrum commodi quibusdam, temporibus enim pariatur illum ducimus. Rem, magni.</p>
+      </div>
+      <div class="foot-col">
+        <h2>
+          Your Choice
+        </h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur perspiciatis perferendis blanditiis rem cumque quia, voluptas hic autem sunt esse nostrum commodi quibusdam, temporibus enim pariatur illum ducimus. Rem, magni.</p>
+      </div>
+      <div class="foot-col">
+        <h2>
+          Your Choice
+        </h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur perspiciatis perferendis blanditiis rem cumque quia, voluptas hic autem sunt esse nostrum commodi quibusdam, temporibus enim pariatur illum ducimus. Rem, magni.</p>
+      </div>
+    </footer>
+  </body>
+</html>
